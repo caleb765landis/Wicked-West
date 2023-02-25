@@ -8,9 +8,10 @@ using TMPro;
 public class PlayerController : MonoBehaviour {
 	
 	// Public movement variables to tweak character movement
-	public float speed;
-	public float jumpforce = 1f;
-	public float dashSpeed = 2f;
+	public float speed = .1f;
+	public float jumpforce = 5f;
+	public float dashSpeed = 5f;
+	public float turnSpeed = 15f;
 	
 	// Public gameplay variables
 	public Vector3 spawnPosition = new Vector3(0f, 0.5f, 0f);
@@ -22,8 +23,8 @@ public class PlayerController : MonoBehaviour {
 	public TextMeshProUGUI ammoText;
 
 	// Private movement variables
-    private float movementX;
-    private float movementY;
+	private Vector3 movement;
+	private Quaternion rotation = Quaternion.identity;
 	private bool isOnGround;
 
 	// Player component references
@@ -44,10 +45,15 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
+		float horizontal = Input.GetAxis ("Horizontal");
+        float vertical = Input.GetAxis ("Vertical");
+		
 		// Create a Vector3 variable, and assign X and Z to feature the horizontal and vertical float variables above
-		Vector3 movement = new Vector3 (movementX, 0.0f, movementY);
+		//Vector3 movement = new Vector3 (horizontal, 0.0f, vertical);
+		movement.Set(horizontal, 0f, vertical);
+        movement.Normalize ();
 
-		rb.AddForce (movement * speed);
+		//rb.AddForce (movement * speed);
 
 		if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
@@ -64,16 +70,25 @@ public class PlayerController : MonoBehaviour {
 			transform.position = spawnPosition;
 		}
 
+		Vector3 desiredForward = Vector3.RotateTowards (transform.forward, movement, turnSpeed * Time.deltaTime, 0f);
+        rotation = Quaternion.LookRotation (desiredForward);
+
+		rb.MovePosition (rb.position + movement * speed);
+        rb.MoveRotation (rotation);
+
 		//checkWin();
 	}
 
+/*
 	void OnMove(InputValue value)
 	{
 		Vector2 v = value.Get<Vector2>();
 
 		movementX = v.x;
 		movementY = v.y;
+		
 	}
+*/
 
 	void OnTriggerEnter(Collider other) 
 	{
