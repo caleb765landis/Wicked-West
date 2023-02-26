@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+
+    public GameObject bulletSpawner;
+    public GameObject bullet;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,9 @@ public class Weapon : MonoBehaviour
 
     public void fire()
     {
-        print("Fire");
+        //print(bulletSpawner.transform.position);
+
+        Instantiate(bullet, bulletSpawner.transform.position, bulletSpawner.transform.rotation);
+
     }
 }
