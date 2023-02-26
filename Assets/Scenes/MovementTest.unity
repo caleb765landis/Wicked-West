@@ -2069,10 +2069,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1883138863248389852, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883138863248389853, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 1883138863248389853, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 1887628607}
+    - target: {fileID: 1883138863248389853, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: dashSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283478446997841883, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9063079
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283478446997841883, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.42261827
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283478446997841883, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283478446997841883, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6283478446997841883, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
 --- !u!1001 &8780641266056464320

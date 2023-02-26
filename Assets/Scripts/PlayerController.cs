@@ -9,23 +9,28 @@ public class PlayerController : MonoBehaviour {
 	
 	// Public movement variables to tweak character movement
 	public float speed = .1f;
-	public float jumpforce = 5f;
-	public float dashSpeed = 5f;
+	public float dashSpeed = 10f;
 	public float turnSpeed = 15f;
+	public float jumpForce = 5f;
+	public float dashForce = 5f;
 	
 	// Public gameplay variables
 	public Vector3 spawnPosition = new Vector3(0f, 0.5f, 0f);
 	public string nextLevel = "";
 	public int ammo = 12;
 	public int maxAmmo = 12;
+	public GameObject pistol;
 
 	// Public UI variables
+	public Camera cam;
 	public TextMeshProUGUI ammoText;
 
 	// Private movement variables
 	private Vector3 movement;
+	private float movementSpeed;
 	private Quaternion rotation = Quaternion.identity;
 	private bool isOnGround;
+	//private bool dashing = false;
 
 	// Player component references
 	private AudioSource pickupSound;
@@ -45,50 +50,58 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
+		checkMovement();
+		checkRotation();
+		checkWeaponInput();
+
+		//checkWin();
+	}
+
+	void checkMovement()
+	{
 		float horizontal = Input.GetAxis ("Horizontal");
         float vertical = Input.GetAxis ("Vertical");
 		
-		// Create a Vector3 variable, and assign X and Z to feature the horizontal and vertical float variables above
-		//Vector3 movement = new Vector3 (horizontal, 0.0f, vertical);
+		movementSpeed = speed;
 		movement.Set(horizontal, 0f, vertical);
         movement.Normalize ();
 
-		//rb.AddForce (movement * speed);
+		if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+		{
+			rb.AddForce(Vector3.up * jumpForce,ForceMode.Impulse);
+		}
 
 		if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			rb.AddForce (movement * dashSpeed, ForceMode.Impulse);
+			rb.AddForce (movement * dashForce, ForceMode.Impulse);
 		}
 
-		if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
-		{
-			rb.AddForce(Vector3.up * jumpforce,ForceMode.Impulse);
-		}
+		rb.MovePosition (rb.position + movement * movementSpeed);
 
 		if (transform.position[1] <= -20)
 		{
 			transform.position = spawnPosition;
 		}
-
-		Vector3 desiredForward = Vector3.RotateTowards (transform.forward, movement, turnSpeed * Time.deltaTime, 0f);
-        rotation = Quaternion.LookRotation (desiredForward);
-
-		rb.MovePosition (rb.position + movement * speed);
-        rb.MoveRotation (rotation);
-
-		//checkWin();
 	}
 
-/*
-	void OnMove(InputValue value)
+	void checkRotation()
 	{
-		Vector2 v = value.Get<Vector2>();
+		RaycastHit hit;
+		Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-		movementX = v.x;
-		movementY = v.y;
-		
+		if (Physics.Raycast(ray, out hit))
+		{
+			transform.LookAt(new Vector3(hit.point.x, transform.position.y, hit.point.z));
+		}
 	}
-*/
+
+	void checkWeaponInput()
+	{
+		if (Input.GetButtonDown("Fire1"))
+		{
+			pistol.GetComponent<Weapon>().fire();
+		}
+	}
 
 	void OnTriggerEnter(Collider other) 
 	{
