@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float bulletSpeed = .001f;
+    public float bulletSpeed = .1f;
+    public float bulletDamage = 25f;
 
     private Rigidbody rb;
 
@@ -14,17 +15,8 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        //rb.MoveRotation (Quaternion.LookRotation(new Vector3(0f, 90f, 0f)));
-
-        /*
-        RaycastHit hit;
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-		if (Physics.Raycast(ray, out hit))
-		{
-			transform.LookAt(new Vector3(hit.point.x, hit.point.y, hit.point.z));
-		}
-        */
+        // Destroy this object after 3 seconds
+        Destroy(this.gameObject, 3f);
     }
 
     void FixedUpdate()
@@ -33,13 +25,7 @@ public class Bullet : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other)
-	{
+	{   
         Destroy(this.gameObject);
-        /*
-		if (other.gameObject.tag == "Ground")
-		{
-			isOnGround = true;
-		}
-        */
 	}
 }

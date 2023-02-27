@@ -10,20 +10,20 @@ public class PlayerController : MonoBehaviour {
 	// Public movement variables to tweak character movement
 	public float speed = .1f;
 	public float dashSpeed = 10f;
-	public float turnSpeed = 15f;
-	public float jumpForce = 5f;
 	public float dashForce = 5f;
+	public float jumpForce = 5f;
 	
 	// Public gameplay variables
 	public Vector3 spawnPosition = new Vector3(0f, 0.5f, 0f);
 	public string nextLevel = "";
-	public int ammo = 12;
-	public int maxAmmo = 12;
+
+	// Public weapon variables
+	public GameObject currentWeapon;
 	public GameObject pistol;
+	public GameObject rifle;
 
 	// Public UI variables
 	public Camera cam;
-	public TextMeshProUGUI ammoText;
 
 	// Private movement variables
 	private Vector3 movement;
@@ -38,14 +38,12 @@ public class PlayerController : MonoBehaviour {
 
 	void Start ()
 	{
-		// Assign the Rigidbody component to our private rb variable
 		rb = GetComponent<Rigidbody>();
+
+		currentWeapon = pistol;
 
 		// get AudioSource component
 		pickupSound = GetComponent<AudioSource>();
-
-		// Set initial ammo
-		SetAmmoText ();
 	}
 
 	void FixedUpdate ()
@@ -53,8 +51,6 @@ public class PlayerController : MonoBehaviour {
 		checkMovement();
 		checkRotation();
 		checkWeaponInput();
-
-		//checkWin();
 	}
 
 	void checkMovement()
@@ -97,20 +93,40 @@ public class PlayerController : MonoBehaviour {
 
 	void checkWeaponInput()
 	{
+		Weapon cw = currentWeapon.GetComponent<Weapon>();
+		
 		if (Input.GetButtonDown("Fire1"))
 		{
-			pistol.GetComponent<Weapon>().fire();
+			cw.fire();
 		}
+
+		if (Input.GetKeyDown(KeyCode.R))
+		{
+			cw.reload();
+		}
+
+		if (Input.GetKeyDown(KeyCode.Alpha1))
+		{
+			currentWeapon.SetActive(false);
+			pistol.SetActive(true);
+			currentWeapon = pistol;
+			cw.SetAmmoText();
+		} 
+		else if (Input.GetKeyDown(KeyCode.Alpha2))
+		{
+			currentWeapon.SetActive(false);
+			rifle.SetActive(true);
+			currentWeapon = rifle;
+			cw.SetAmmoText();
+		}
+
 	}
 
 	void OnTriggerEnter(Collider other) 
 	{
-		// ..and if the GameObject you intersect has the tag 'Pick Up' assigned to it..
 		if (other.gameObject.CompareTag ("PickUp"))
 		{
 			other.gameObject.SetActive (false);
-
-			//SetAmmoText ();
 
 			// Play pickup sound.
 			pickupSound.Play();
@@ -136,11 +152,6 @@ public class PlayerController : MonoBehaviour {
 	public void changeScene()
 	{
 		SceneManager.LoadScene(nextLevel);
-	}
-
-    void SetAmmoText()
-	{
-		ammoText.text = "Ammo: " + ammo.ToString() + "/" + maxAmmo.ToString();
 	}
 
 	/* commented out for now to adjust later during gameplay programming
