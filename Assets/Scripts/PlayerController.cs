@@ -46,11 +46,17 @@ public class PlayerController : MonoBehaviour {
 		pickupSound = GetComponent<AudioSource>();
 	}
 
-	void FixedUpdate ()
+	void Update ()
 	{
-		checkMovement();
+		checkJump();
+		checkDash();
 		checkRotation();
 		checkWeaponInput();
+	}
+
+	void FixedUpdate()
+	{
+		checkMovement();
 	}
 
 	void checkMovement()
@@ -62,21 +68,27 @@ public class PlayerController : MonoBehaviour {
 		movement.Set(horizontal, 0f, vertical);
         movement.Normalize ();
 
-		if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
-		{
-			rb.AddForce(Vector3.up * jumpForce,ForceMode.Impulse);
-		}
-
-		if (Input.GetKeyDown(KeyCode.LeftShift))
-		{
-			rb.AddForce (movement * dashForce, ForceMode.Impulse);
-		}
-
 		rb.MovePosition (rb.position + movement * movementSpeed);
 
 		if (transform.position[1] <= -20)
 		{
 			transform.position = spawnPosition;
+		}
+	}
+
+	void checkJump()
+	{
+		if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+		{
+			rb.AddForce(Vector3.up * jumpForce,ForceMode.Impulse);
+		}
+	}
+
+	void checkDash()
+	{
+		if (Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			rb.AddForce (movement * dashForce, ForceMode.Impulse);
 		}
 	}
 
