@@ -7,6 +7,8 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour {
 	
+	public float health = 100f;
+
 	// Public movement variables to tweak character movement
 	public float speed = .1f;
 	public float dashSpeed = 10f;
