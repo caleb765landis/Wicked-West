@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using CodeMonkey.HealthSystemCM;
 
 // Include the namespace required to use Unity UI and Input System
 using UnityEngine.InputSystem;
 using TMPro;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	
-	public float health = 100f;
+	static public float maxHealth = 100f;
+	public HealthSystem healthSystemComponent;
+	//public HealthBarUI healthBar;
 
 	// Public movement variables to tweak character movement
 	public float speed = .1f;
@@ -46,6 +49,13 @@ public class PlayerController : MonoBehaviour {
 
 		// get AudioSource component
 		pickupSound = GetComponent<AudioSource>();
+	}
+
+	void Awake()
+	{
+		healthSystemComponent = new HealthSystem(maxHealth);
+		healthSystemComponent.OnDead += HealthSystem_OnDead;
+		//healthBar.SetHealthSystem(healthSystemComponent);
 	}
 
 	void Update ()
@@ -162,6 +172,16 @@ public class PlayerController : MonoBehaviour {
 			isOnGround = false;
 		}
 	}
+
+	public HealthSystem GetHealthSystem()
+    {
+        return healthSystemComponent;
+    }
+
+	private void HealthSystem_OnDead(object sender, System.EventArgs e)
+    {
+        print("Dead");
+    }
 
 	public void changeScene()
 	{

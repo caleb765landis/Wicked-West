@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -576,11 +576,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09b6f5bf63352c64f89ce12011a76231, type: 3}
---- !u!1 &157216825 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1883138863248389824, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
-  m_PrefabInstance: {fileID: 608584204}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &180269183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 259ae4d5279574537b42e63374b46fc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 157216825}
+  player: {fileID: 723360692}
 --- !u!1001 &321167254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2014,6 +2009,18 @@ PrefabInstance:
       propertyPath: currentWeapon
       value: 
       objectReference: {fileID: 608584205}
+    - target: {fileID: 2063954998801904615, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 320945609}
+    - target: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 320945609}
+    - target: {fileID: 4401417861777935062, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: getHealthSystemGameObject
+      value: 
+      objectReference: {fileID: 723360692}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
 --- !u!1 &608584205 stripped
@@ -2416,6 +2423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09b6f5bf63352c64f89ce12011a76231, type: 3}
+--- !u!1 &723360692 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5039084528419508116, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+  m_PrefabInstance: {fileID: 608584204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &726798925
 GameObject:
   m_ObjectHideFlags: 0

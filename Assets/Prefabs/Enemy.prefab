@@ -581,8 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7c07e199841a407fa0c62f92979deb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  agent: {fileID: 0}
+  agent: {fileID: 886230869557216188}
   player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
@@ -660,9 +659,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7716124226358761620}
     m_Modifications:
+    - target: {fileID: 2630104725087937482, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630104725087937486, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630104726215137751, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
+      propertyPath: getHealthSystemGameObject
+      value: 
+      objectReference: {fileID: 6045565432565635475}
+    - target: {fileID: 2630104726457904485, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4479629748830177460, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
       propertyPath: m_Name
       value: CharacterHealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479629748830177460, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4768587306711454882, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
       propertyPath: CharacterObject
@@ -682,7 +701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6597456803680209892, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6597456803680209892, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
       propertyPath: m_LocalRotation.w

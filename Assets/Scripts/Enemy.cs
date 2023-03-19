@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using CodeMonkey.HealthSystemCM;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IGetHealthSystem
 {
 
-    public float health = 100f;
+    static public float maxHealth = 100f;
+    private HealthSystem healthSystemComponent;
 
     public NavMeshAgent agent;
 
@@ -32,13 +34,10 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
 		{
-			health -= other.GetComponent<Bullet>().bulletDamage;
+			float damage = other.GetComponent<Bullet>().bulletDamage;
+            healthSystemComponent.Damage(damage);
+            print(healthSystemComponent.GetHealth());
             Destroy(other.gameObject);
-
-            if (health <= 0f)
-            {
-                Destroy(this.gameObject);
-            }
 		}
     }
 
@@ -46,6 +45,10 @@ public class Enemy : MonoBehaviour
     {
         player = GameObject.Find("PlayerModels").transform;
         agent = GetComponent<NavMeshAgent>();
+
+        healthSystemComponent = new HealthSystem(maxHealth);
+        healthSystemComponent.OnDead += HealthSystem_OnDead;
+
     }
 
     private void Update()
@@ -116,16 +119,9 @@ public class Enemy : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-
-        if (health <= 0) Invoke(nameof(DestroyEnemy), 0.5f);
-    }
-
     private void DestroyEnemy()
     {
-        Destroy(gameObject);
+        Destroy(this.transform.parent.gameObject);
     }
 
     private void OnDrawGizmosSelected()
@@ -134,5 +130,15 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+
+    public HealthSystem GetHealthSystem()
+    {
+        return healthSystemComponent;
+    }
+
+    private void HealthSystem_OnDead(object sender, System.EventArgs e)
+    {
+        DestroyEnemy();
     }
 }
