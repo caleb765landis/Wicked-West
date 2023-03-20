@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
+        //if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
 
@@ -126,7 +126,6 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
         //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
         //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
-        //player.GetHealthSystem().Damage(damageDealt);
         player.gameObject.GetComponent<PlayerController>().GetHealthSystem().Damage(damageDealt);
     }
 
