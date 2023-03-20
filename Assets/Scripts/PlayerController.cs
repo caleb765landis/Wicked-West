@@ -9,6 +9,7 @@ using TMPro;
 public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	
 	public Animator playeranim;
+	public AudioSource source;
 
 	static public float maxHealth = 100f;
 	public HealthSystem healthSystemComponent;
@@ -138,6 +139,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 		if (Input.GetButtonDown("Fire1"))
 		{
 			cw.fire();
+			source.Play();
 		}
 
 		if (Input.GetKeyDown(KeyCode.R))
