@@ -197,6 +197,8 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	private void HealthSystem_OnDead(object sender, System.EventArgs e)
     {
         print("Dead");
+
+		playeranim.SetBool("isDead", true);
     }
 
 	public void changeScene()
