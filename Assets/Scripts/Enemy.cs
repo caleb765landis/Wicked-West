@@ -7,6 +7,8 @@ using CodeMonkey.HealthSystemCM;
 public class Enemy : MonoBehaviour, IGetHealthSystem
 {
 
+    public Animator goblinanim;
+
     static public float maxHealth = 100f;
     private HealthSystem healthSystemComponent;
 
@@ -29,6 +31,8 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     //States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
+
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -60,10 +64,14 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
+
+       
     }
 
     private void Patroling()
     {
+        goblinanim.SetBool("isWalking", true);
+
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -89,11 +97,14 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
 
     private void ChasePlayer()
     {
+        goblinanim.SetBool("isWalking", true);
         agent.SetDestination(player.position);
     }
 
     private void AttackPlayer()
     {
+        goblinanim.SetBool("isWalking", false);
+
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 

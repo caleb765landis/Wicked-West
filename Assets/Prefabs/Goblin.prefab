@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 4832097887298061583}
   - component: {fileID: 7750035667123667901}
   - component: {fileID: 886230869557216188}
+  - component: {fileID: 3440334657706875650}
   m_Layer: 0
   m_Name: EnemyModels
   m_TagString: Untagged
@@ -582,6 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7c07e199841a407fa0c62f92979deb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goblinanim: {fileID: 2100831796936489145}
   agent: {fileID: 886230869557216188}
   player: {fileID: 0}
   whatIsGround:
@@ -620,6 +622,26 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &3440334657706875650
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6045565432565635475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09ac5d477a21c38449ac686c5552895d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6944267736182030894
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +744,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efb9e8561623f42a9bb0f4f9ca5d78c5, type: 3}
+--- !u!1 &1554695282114565315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: efb9e8561623f42a9bb0f4f9ca5d78c5, type: 3}
+  m_PrefabInstance: {fileID: 1824532682615761298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2100831796936489145
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554695282114565315}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09ac5d477a21c38449ac686c5552895d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2222724000220073593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: efb9e8561623f42a9bb0f4f9ca5d78c5, type: 3}

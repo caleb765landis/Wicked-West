@@ -8,6 +8,8 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	
+	public Animator playeranim;
+
 	static public float maxHealth = 100f;
 	public HealthSystem healthSystemComponent;
 	//public HealthBarUI healthBar;
@@ -49,6 +51,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 
 		// get AudioSource component
 		pickupSound = GetComponent<AudioSource>();
+
 	}
 
 	void Awake()
@@ -73,6 +76,19 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 
 	void checkMovement()
 	{
+		if(Input.GetAxis ("Horizontal") !=0|| Input.GetAxis("Vertical") !=0)
+        {
+            Debug.Log("didthing");
+            playeranim.SetBool("isWalking", true);
+        }
+
+		else
+		{
+			playeranim.SetBool("isWalking", false);
+		}
+		
+
+
 		float horizontal = Input.GetAxis ("Horizontal");
         float vertical = Input.GetAxis ("Vertical");
 		
