@@ -569,8 +569,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.89, z: 0.5}
-  m_Center: {x: 0, y: 0.45, z: 0}
+  m_Size: {x: 0.6, y: 0.89, z: 0.6}
+  m_Center: {x: 0, y: 0.45, z: 0.125}
 --- !u!114 &7750035667123667901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,6 +586,7 @@ MonoBehaviour:
   goblinanim: {fileID: 2100831796936489145}
   agent: {fileID: 886230869557216188}
   player: {fileID: 0}
+  playerObject: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -596,8 +597,9 @@ MonoBehaviour:
   walkPointRange: 5
   timeBetweenAttacks: 0.5
   projectile: {fileID: 1020556639512595749, guid: 2dded84c4bee64f8f9a871e161fb7995, type: 3}
+  damageDealt: 10
   sightRange: 5
-  attackRange: 2
+  attackRange: 0.75
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!195 &886230869557216188
@@ -610,7 +612,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1
+  m_Speed: 1.8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

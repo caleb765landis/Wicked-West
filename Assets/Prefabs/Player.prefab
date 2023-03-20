@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627997935d86f429aba3d0ad70878ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playeranim: {fileID: 0}
   speed: 0.1
   dashSpeed: 2
   dashForce: 5
@@ -195,15 +196,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6853461068079454685, guid: 8f95ca18dee8e43c08118706a367b7b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.179
+      value: 0.237
       objectReference: {fileID: 0}
     - target: {fileID: 6853461068079454685, guid: 8f95ca18dee8e43c08118706a367b7b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.374
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: 6853461068079454685, guid: 8f95ca18dee8e43c08118706a367b7b7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.29900002
+      value: 0.204
       objectReference: {fileID: 0}
     - target: {fileID: 6853461068079454685, guid: 8f95ca18dee8e43c08118706a367b7b7, type: 3}
       propertyPath: m_LocalRotation.w

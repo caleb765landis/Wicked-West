@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     public NavMeshAgent agent;
 
     public Transform player;
+    public GameObject playerObject;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public GameObject projectile;
+    public float damageDealt = 10f;
 
     //States
     public float sightRange, attackRange;
@@ -120,9 +122,12 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     }
 
     public void AttackAction(){
-        Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-        rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-        rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+        //Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+        //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+        //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+
+        //player.GetHealthSystem().Damage(damageDealt);
+        player.gameObject.GetComponent<PlayerController>().GetHealthSystem().Damage(damageDealt);
     }
 
     private void ResetAttack()
