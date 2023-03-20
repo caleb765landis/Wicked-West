@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     public NavMeshAgent agent;
 
     public Transform player;
-    public GameObject playerObject;
+    //public GameObject playerObject;
 
     public LayerMask whatIsGround, whatIsPlayer;
 

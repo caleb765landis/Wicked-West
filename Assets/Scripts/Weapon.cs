@@ -13,12 +13,17 @@ public class Weapon : MonoBehaviour
 
 	public TextMeshProUGUI ammoText;
 
+    public AudioSource audioSource;
+    public AudioClip clip;
+
     // Start is called before the first frame update
     void Start()
     {
         ammo = maxAmmo;
 
         SetAmmoText();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,6 +39,7 @@ public class Weapon : MonoBehaviour
             Instantiate(bullet, bulletSpawner.transform.position, bulletSpawner.transform.rotation);
             ammo--;
 	        SetAmmoText();
+            audioSource.Play();
         }
 
     }

@@ -598,7 +598,7 @@ MonoBehaviour:
   timeBetweenAttacks: 0.5
   projectile: {fileID: 1020556639512595749, guid: 2dded84c4bee64f8f9a871e161fb7995, type: 3}
   damageDealt: 10
-  sightRange: 5
+  sightRange: 6
   attackRange: 0.75
   playerInSightRange: 0
   playerInAttackRange: 0

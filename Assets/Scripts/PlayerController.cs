@@ -139,7 +139,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 		if (Input.GetButtonDown("Fire1"))
 		{
 			cw.fire();
-			source.Play();
+			//source.Play();
 		}
 
 		if (Input.GetKeyDown(KeyCode.R))
