@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	void Update ()
 	{
 		checkJump();
-		checkDash();
+		//checkDash();
 		checkRotation();
 		checkWeaponInput();
 	}
