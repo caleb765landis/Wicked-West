@@ -32,6 +32,10 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 
 	// Public UI variables
 	public Camera cam;
+	public GameObject pistolBackgroundActive;
+	public GameObject pistolBackgroundNotActive;
+	public GameObject shotgunBackgroundActive;
+	public GameObject shotgunBackgroundNotActive;
 
 	// Private movement variables
 	private Vector3 movement;
@@ -151,6 +155,10 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 		{
 			currentWeapon.SetActive(false);
 			pistol.SetActive(true);
+			pistolBackgroundActive.SetActive(true);
+			pistolBackgroundNotActive.SetActive(false);
+			shotgunBackgroundActive.SetActive(false);
+			shotgunBackgroundNotActive.SetActive(true);
 			currentWeapon = pistol;
 			cw.SetAmmoText();
 		} 
@@ -158,6 +166,10 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 		{
 			currentWeapon.SetActive(false);
 			rifle.SetActive(true);
+			pistolBackgroundActive.SetActive(false);
+			pistolBackgroundNotActive.SetActive(true);
+			shotgunBackgroundActive.SetActive(true);
+			shotgunBackgroundNotActive.SetActive(false);
 			currentWeapon = rifle;
 			cw.SetAmmoText();
 		}

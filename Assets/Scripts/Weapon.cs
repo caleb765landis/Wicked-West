@@ -52,6 +52,6 @@ public class Weapon : MonoBehaviour
 
     public void SetAmmoText()
 	{
-		ammoText.text = "Ammo: " + ammo.ToString() + "/" + maxAmmo.ToString();
+		ammoText.text = ammo.ToString() + "/" + maxAmmo.ToString();
 	}
 }
