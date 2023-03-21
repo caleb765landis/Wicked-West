@@ -729,7 +729,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 78165457}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 723360707}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &78165457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3351,6 +3363,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 320945609}
     - target: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: nextLevel
+      value: Level1_Tutorial_Town
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: youDiedUI
+      value: 
+      objectReference: {fileID: 1365313420}
+    - target: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: playeranim
       value: 
       objectReference: {fileID: 1103879099}
@@ -4136,6 +4156,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6140894666442836606, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
   m_PrefabInstance: {fileID: 608584204}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &723360707 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+  m_PrefabInstance: {fileID: 608584204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723360692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627997935d86f429aba3d0ad70878ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &748582258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013631793570, guid: 03fbe6db4827a41959091cf3f407fbc7, type: 3}

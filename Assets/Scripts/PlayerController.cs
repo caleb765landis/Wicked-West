@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	// Public gameplay variables
 	public Vector3 spawnPosition = new Vector3(0f, 0.5f, 0f);
 	public string nextLevel = "";
+	public bool isDead = false;
 
 	// Public weapon variables
 	public GameObject currentWeapon;
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	public GameObject pistolBackgroundNotActive;
 	public GameObject shotgunBackgroundActive;
 	public GameObject shotgunBackgroundNotActive;
+	public GameObject youDiedUI;
 
 	// Private movement variables
 	private Vector3 movement;
@@ -68,15 +70,15 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 
 	void Update ()
 	{
-		checkJump();
+		//checkJump();
 		//checkDash();
-		checkRotation();
-		checkWeaponInput();
+		if (!isDead) checkRotation();
+		if (!isDead) checkWeaponInput();
 	}
 
 	void FixedUpdate()
 	{
-		checkMovement();
+		if (!isDead) checkMovement();
 	}
 
 	void checkMovement()
@@ -210,9 +212,12 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 
 	private void HealthSystem_OnDead(object sender, System.EventArgs e)
     {
-        print("Dead");
-
+		isDead = true;
 		playeranim.SetBool("isDead", true);
+		GetComponent<PlayerInput>().enabled = false;
+		// GetComponent<PlayerInput>().PassivateInput();
+		youDiedUI.SetActive(true);
+
     }
 
 	public void changeScene()
