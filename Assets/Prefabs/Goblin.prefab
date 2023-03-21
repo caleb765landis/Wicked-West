@@ -586,7 +586,6 @@ MonoBehaviour:
   goblinanim: {fileID: 2100831796936489145}
   agent: {fileID: 886230869557216188}
   player: {fileID: 0}
-  playerObject: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -598,7 +597,7 @@ MonoBehaviour:
   timeBetweenAttacks: 0.5
   projectile: {fileID: 1020556639512595749, guid: 2dded84c4bee64f8f9a871e161fb7995, type: 3}
   damageDealt: 10
-  sightRange: 6
+  sightRange: 90
   attackRange: 0.75
   playerInSightRange: 0
   playerInAttackRange: 0
