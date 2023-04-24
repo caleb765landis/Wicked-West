@@ -246,6 +246,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (5)
@@ -866,6 +874,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (9)
@@ -1237,6 +1253,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (20)
@@ -1311,6 +1335,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin
@@ -1861,6 +1893,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (2)
@@ -2959,6 +2999,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (10)
@@ -4123,6 +4171,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (4)
@@ -4279,6 +4335,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (1)
@@ -5589,6 +5653,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (11)
@@ -10906,6 +10978,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (12)
@@ -11364,6 +11444,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (14)
@@ -12033,6 +12121,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (8)
@@ -12228,6 +12324,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (7)
@@ -12661,6 +12765,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (13)
@@ -14401,6 +14513,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (16)
@@ -14493,6 +14613,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (18)
@@ -14608,6 +14736,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (3)
@@ -14970,6 +15106,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (15)
@@ -15122,6 +15266,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (19)
@@ -15614,6 +15766,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (17)
@@ -20738,6 +20898,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 791837229}
     m_Modifications:
+    - target: {fileID: 245059679408669869, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
+    - target: {fileID: 1927371359561453284, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a074d0fde8fdc846b824a063ed26524, type: 2}
     - target: {fileID: 6944267736182030894, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: m_Name
       value: Goblin (6)
