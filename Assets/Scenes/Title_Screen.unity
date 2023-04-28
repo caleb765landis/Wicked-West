@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Goblins and Gunslingers
+  m_text: Wicked West
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9011faa431603164ebb64ff1e274a439, type: 2}
   m_sharedMaterial: {fileID: -1528918949165004673, guid: 9011faa431603164ebb64ff1e274a439, type: 2}
