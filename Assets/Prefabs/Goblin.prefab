@@ -597,7 +597,7 @@ MonoBehaviour:
   timeBetweenAttacks: 0.5
   projectile: {fileID: 1020556639512595749, guid: 2dded84c4bee64f8f9a871e161fb7995, type: 3}
   damageDealt: 10
-  sightRange: 90
+  sightRange: 10
   attackRange: 0.75
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -804,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4479629748830177460, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4768587306711454882, guid: 764f2b140ef80411a9aa45a89d41c498, type: 3}
       propertyPath: CharacterObject

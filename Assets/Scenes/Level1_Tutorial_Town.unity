@@ -308,7 +308,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -936,7 +936,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -1315,7 +1315,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -1397,7 +1397,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -1955,7 +1955,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -3061,7 +3061,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -3806,6 +3806,10 @@ PrefabInstance:
       propertyPath: shotgunBackgroundNotActive
       value: 
       objectReference: {fileID: 1592811309}
+    - target: {fileID: 3394504061808898748, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3886782520490641053, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4233,7 +4237,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -4397,7 +4401,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -5641,7 +5645,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -6182,7 +6186,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -6648,7 +6652,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -7325,7 +7329,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -7528,7 +7532,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -7969,7 +7973,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -9643,7 +9647,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -9743,7 +9747,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -9866,7 +9870,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -10236,7 +10240,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -10396,7 +10400,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -10896,7 +10900,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange
@@ -11244,7 +11248,7 @@ PrefabInstance:
       objectReference: {fileID: 723360703}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: sightRange
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7750035667123667901, guid: 2c0222a8deed346b2974f6c983ddafed, type: 3}
       propertyPath: attackRange

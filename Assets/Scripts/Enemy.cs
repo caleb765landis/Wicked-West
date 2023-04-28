@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     public Animator goblinanim;
 
     static public float maxHealth = 100f;
-    private HealthSystem healthSystemComponent;
+    protected HealthSystem healthSystemComponent;
 
     public NavMeshAgent agent;
 
@@ -47,7 +47,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
 		}
     }
 
-    private void Awake()
+    protected void Awake()
     {
         player = GameObject.Find("PlayerModels").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -57,7 +57,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
 
     }
 
-    private void Update()
+    protected void Update()
     {
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
        
     }
 
-    private void Patroling()
+    protected void Patroling()
     {
         goblinanim.SetBool("isWalking", true);
 
@@ -85,7 +85,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
     }
-    private void SearchWalkPoint()
+    protected void SearchWalkPoint()
     {
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
@@ -97,13 +97,13 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
             walkPointSet = true;
     }
 
-    private void ChasePlayer()
+    protected void ChasePlayer()
     {
         goblinanim.SetBool("isWalking", true);
         agent.SetDestination(player.position);
     }
 
-    private void AttackPlayer()
+    protected void AttackPlayer()
     {
         goblinanim.SetBool("isWalking", false);
 
@@ -121,25 +121,25 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
         }
     }
 
-    public void AttackAction(){
-        //Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-        //rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-        //rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+    public virtual void AttackAction(){
+        // Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+        // rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+        // rb.AddForce(transform.up * 8f, ForceMode.Impulse);
 
         player.gameObject.GetComponent<PlayerController>().GetHealthSystem().Damage(damageDealt);
     }
 
-    private void ResetAttack()
+    protected void ResetAttack()
     {
         alreadyAttacked = false;
     }
 
-    private void DestroyEnemy()
+    protected void DestroyEnemy()
     {
         Destroy(this.transform.parent.gameObject);
     }
 
-    private void OnDrawGizmosSelected()
+    protected void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
@@ -152,7 +152,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
         return healthSystemComponent;
     }
 
-    private void HealthSystem_OnDead(object sender, System.EventArgs e)
+    protected void HealthSystem_OnDead(object sender, System.EventArgs e)
     {
         DestroyEnemy();
     }
