@@ -3436,6 +3436,10 @@ PrefabInstance:
       propertyPath: currentWeapon
       value: 
       objectReference: {fileID: 855356481}
+    - target: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1543394784}
     - target: {fileID: 3394504061808898748, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3445,6 +3449,11 @@ PrefabInstance:
 --- !u!1 &855356481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6372297463286567783, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+  m_PrefabInstance: {fileID: 855356480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &855356482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5039084528419508116, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
   m_PrefabInstance: {fileID: 855356480}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &858294080
@@ -6767,6 +6776,7 @@ GameObject:
   - component: {fileID: 1543394785}
   - component: {fileID: 1543394784}
   - component: {fileID: 1543394783}
+  - component: {fileID: 1543394786}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6832,14 +6842,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543394782}
-  m_LocalRotation: {x: 0.3772746, y: -0, z: -0, w: 0.9261015}
-  m_LocalPosition: {x: 109.14, y: 2.76, z: 253.477}
+  m_LocalRotation: {x: 0.46174863, y: 0, z: 0, w: 0.8870109}
+  m_LocalPosition: {x: 109.14, y: 2.76, z: 254}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 44.33, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 55, y: 0, z: 0}
+--- !u!114 &1543394786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543394782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259ae4d5279574537b42e63374b46fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 855356482}
 --- !u!1 &1550435071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b210222e13ae6439791a7bd8e23ea5de, type: 3}
@@ -8934,7 +8957,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896028732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.326332, y: -5.2040057, z: 7.650177}
+  m_LocalPosition: {x: -3.87, y: -5.2040057, z: 10.14}
   m_LocalScale: {x: 0.40778, y: 0.40778, z: 0.40778}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	// Public gameplay variables
 	public Vector3 spawnPosition = new Vector3(0f, 0.5f, 0f);
 	public string nextLevel = "";
+	public string level = "";
 	public bool isDead = false;
 
 	// Public weapon variables
@@ -219,6 +220,11 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 		youDiedUI.SetActive(true);
 
     }
+
+	public void restartScene()
+	{
+		SceneManager.LoadScene(level);
+	}
 
 	public void changeScene()
 	{
