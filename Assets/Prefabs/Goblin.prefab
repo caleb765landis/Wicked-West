@@ -584,6 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goblinanim: {fileID: 2100831796936489145}
+  gold: {fileID: 4679640243980540059, guid: 955d9780e7187492d8bfe930e033ca7f, type: 3}
   agent: {fileID: 886230869557216188}
   player: {fileID: 0}
   whatIsGround:

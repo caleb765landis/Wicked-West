@@ -8,6 +8,8 @@ TagManager:
   - PickUp
   - Enemy
   - Bullet
+  - TreasureChest
+  - Gold
   layers:
   - Default
   - TransparentFX

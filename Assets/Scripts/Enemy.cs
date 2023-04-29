@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     static public float maxHealth = 100f;
     protected HealthSystem healthSystemComponent;
 
+    public GameObject gold;
+
     public NavMeshAgent agent;
 
     public Transform player;
@@ -137,6 +139,7 @@ public class Enemy : MonoBehaviour, IGetHealthSystem
     protected void DestroyEnemy()
     {
         Destroy(this.transform.parent.gameObject);
+        Instantiate(gold, transform.position, transform.rotation);
     }
 
     protected void OnDrawGizmosSelected()

@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	public HealthSystem healthSystemComponent;
 	//public HealthBarUI healthBar;
 
+	public int gold = 0;
+
 	// Public movement variables to tweak character movement
 	public float speed = .1f;
 	public float dashSpeed = 10f;
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 	public GameObject shotgunBackgroundActive;
 	public GameObject shotgunBackgroundNotActive;
 	public GameObject youDiedUI;
+	public TextMeshProUGUI goldText;
 
 	// Private movement variables
 	private Vector3 movement;
@@ -181,13 +184,23 @@ public class PlayerController : MonoBehaviour, IGetHealthSystem {
 
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.gameObject.CompareTag ("PickUp"))
+		if (other.gameObject.CompareTag ("TreasureChest"))
 		{
 			other.gameObject.SetActive (false);
 
-			// Play pickup sound.
-			pickupSound.Play();
+			gold += 100;
+
+			goldText.text = gold.ToString();
+
+		} else if (other.gameObject.CompareTag ("Gold")) {
+			other.gameObject.SetActive (false);
+
+			gold += 10;
+
+			goldText.text = gold.ToString();
 		}
+
+		
 	}
 
 	void OnCollisionEnter(Collision other)
