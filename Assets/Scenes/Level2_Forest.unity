@@ -1825,7 +1825,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &180278401
 PrefabInstance:
@@ -2202,7 +2202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d8e194d4e65c90b4190b74982ea8b4f1, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d8e194d4e65c90b4190b74982ea8b4f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2489,7 +2489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013679189794, guid: 75c92d7332662430394a160d1e6a65ec, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000013679189794, guid: 75c92d7332662430394a160d1e6a65ec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2923,7 +2923,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320945607}
   m_LocalRotation: {x: 0.46174863, y: 0, z: 0, w: 0.8870109}
-  m_LocalPosition: {x: 0, y: 6, z: -3.5}
+  m_LocalPosition: {x: 1.4, y: 6, z: -6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4234,7 +4234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 608584207}
-  EndGameUI: {fileID: 0}
+  EndGameUI: {fileID: 1396780218}
   doRestart: 0
   fadeDuration: 3
   displayImageDuration: 3
@@ -6099,7 +6099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1883138863248389826, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1883138863248389826, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_LocalScale.x
@@ -6115,7 +6115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1883138863248389826, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.4000015
       objectReference: {fileID: 0}
     - target: {fileID: 1883138863248389826, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6123,7 +6123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1883138863248389826, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.6000004
       objectReference: {fileID: 0}
     - target: {fileID: 1883138863248389826, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6217,6 +6217,10 @@ PrefabInstance:
       propertyPath: getHealthSystemGameObject
       value: 
       objectReference: {fileID: 316620177}
+    - target: {fileID: 5039084528419508116, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8589776716593868181, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: clip
       value: 
@@ -9211,7 +9215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c82baaf9b8b5a574489c980fc6c4a34c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c82baaf9b8b5a574489c980fc6c4a34c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19661,7 +19665,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1907707210
 PrefabInstance:
@@ -21312,8 +21316,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Elaine the Witch:\n\"Congratulations on ridding the town of the dreaded
-    goblins!\n  You have done well young gunslinger.\""
+  m_text: 'You hear a voice coming from the crypt:
+
+    "More goblins have fallen,
+    enter my tomb to see if you will fall with them"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
