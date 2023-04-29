@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2833,7 +2833,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 316620177}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d66f66cab24f53847aae6fb7c9cd38dd, type: 2}
   m_CullingMode: 0
@@ -6093,6 +6093,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9124898523305853003, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1883138863248389824, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: m_Name
       value: Player
@@ -6196,7 +6200,7 @@ PrefabInstance:
     - target: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: playeranim
       value: 
-      objectReference: {fileID: 1064641373}
+      objectReference: {fileID: 2116847658}
     - target: {fileID: 2636161657965850941, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
       propertyPath: pistolBackgroundActive
       value: 
@@ -11462,11 +11466,6 @@ CanvasRenderer:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010932741508, guid: 75c92d7332662430394a160d1e6a65ec, type: 3}
   m_PrefabInstance: {fileID: 1088245072}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1064641373 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: -9124898523305853003, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
-  m_PrefabInstance: {fileID: 608584204}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1076616739
 PrefabInstance:
@@ -21432,6 +21431,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9999999, y: 0.8239, z: 0.09999999}
   m_Center: {x: 0, y: 0.41195, z: -0.44999996}
+--- !u!95 &2116847658 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7697522643434768603, guid: 1872800ae7a78439c8f1958018e1a447, type: 3}
+  m_PrefabInstance: {fileID: 608584204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2117665043
 PrefabInstance:
   m_ObjectHideFlags: 0

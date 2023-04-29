@@ -331,12 +331,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playeranim: {fileID: -9124898523305853003}
   source: {fileID: 251430453647433959}
+  gold: 0
   speed: 0.1
   dashSpeed: 2
   dashForce: 5
   jumpForce: 5
   spawnPosition: {x: 0, y: 0.5, z: 0}
   nextLevel: 
+  level: 
   isDead: 0
   currentWeapon: {fileID: 0}
   pistol: {fileID: 6372297463286567783}
@@ -347,6 +349,7 @@ MonoBehaviour:
   shotgunBackgroundActive: {fileID: 0}
   shotgunBackgroundNotActive: {fileID: 0}
   youDiedUI: {fileID: 0}
+  goldText: {fileID: 0}
 --- !u!114 &2063954998801904615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,6 +798,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 03df74b60200f4abeb02bbd0f15bc017, type: 3}
   m_PrefabInstance: {fileID: 7093350408937873078}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7976382143566717927 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 03df74b60200f4abeb02bbd0f15bc017, type: 3}
+  m_PrefabInstance: {fileID: 7093350408937873078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7697522643434768603
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7976382143566717927}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d66f66cab24f53847aae6fb7c9cd38dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7704747038899241824
 PrefabInstance:
   m_ObjectHideFlags: 0
