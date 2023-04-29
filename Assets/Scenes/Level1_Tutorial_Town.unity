@@ -10791,6 +10791,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 723360703}
   EndGameUI: {fileID: 1390628604}
+  doRestart: 1
+  fadeDuration: 3
+  displayImageDuration: 3
+  m_Timer: 0
+  endLevel: 0
 --- !u!1 &1753856624 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2317b0c733b0c584f82e86d22697b6c3, type: 3}

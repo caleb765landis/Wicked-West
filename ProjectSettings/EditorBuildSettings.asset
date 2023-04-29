@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1_Tutorial_Town.unity
     guid: abf9135737328594689e553670b22a92
+  - enabled: 1
+    path: Assets/Scenes/Level2_Forest.unity
+    guid: 2e091bc7ffa19d345a220536ccdf4bc3
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6ff61a10e7e2548098e0783ad0eca946, type: 2}
